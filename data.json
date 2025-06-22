@@ -1,402 +1,502 @@
 [
     {
-        "question": "HTML nima uchun ishlatiladi?",
+        "question": "HTML nima?",
         "answers": [
-            "Veb sahifalarni yaratish uchun",
-            "Rasmlarni tahrirlash uchun",
-            "Ma'lumotlar bazasini boshqarish uchun",
-            "Operatsion tizimni o'rnatish uchun"
+            "HighText Machine Language",
+            "HyperText Markup Language",
+            "HyperText Markdown Language",
+            "HyperTool Markup Language"
         ],
-        "correct_answer": "Veb sahifalarni yaratish uchun"
+        "correct_answer": "HyperText Markup Language"
     },
     {
-        "question": "HTML hujjatidagi asosiy konteyner qaysi teg?",
+        "question": "HTML faylining kengaytmasi qanday?",
         "answers": [
-            "<html>",
+            ".doc",
+            ".ht",
+            ".xml",
+            ".html"
+        ],
+        "correct_answer": ".html"
+    },
+    {
+        "question": "HTMLda sarlavha (title) qanday belgilanadi?",
+        "answers": [
+            "<title>",
+            "<header>",
+            "<meta>",
+            "<head>"
+        ],
+        "correct_answer": "<title>"
+    },
+    {
+        "question": "Eng katta sarlavha tagi qaysi?",
+        "answers": [
+            "<h1>",
+            "<h4>",
+            "<h6>",
+            "<p>"
+        ],
+        "correct_answer": "<h1>"
+    },
+    {
+        "question": "Paragraf yaratish uchun qaysi teg ishlatiladi?",
+        "answers": [
+            "<p>",
+            "<text>",
+            "<span>",
+            "<div>"
+        ],
+        "correct_answer": "<p>"
+    },
+    {
+        "question": "HTML hujjati qaysi teg bilan boshlanadi?",
+        "answers": [
             "<head>",
-            "<body>",
-            "<main>"
+            "<meta>",
+            "<html>",
+            "<!DOCTYPE html>"
         ],
-        "correct_answer": "<html>"
+        "correct_answer": "<!DOCTYPE html>"
     },
     {
-        "question": "<br> tegi nimaga xizmat qiladi?",
+        "question": "Rasm kiritish uchun qaysi teg ishlatiladi?",
         "answers": [
-            "Bo'shliq qo'shish",
-            "Satr oxiri",
-            "Satrni uzish",
-            "Rasm qo'yish"
-        ],
-        "correct_answer": "Satrni uzish"
-    },
-    {
-        "question": "Rasm qo‘yish uchun qaysi teg ishlatiladi?",
-        "answers": [
-            "<image>",
             "<img>",
             "<pic>",
+            "<image>",
             "<src>"
         ],
         "correct_answer": "<img>"
     },
     {
-        "question": "Giperhavola yaratish uchun qaysi teg ishlatiladi?",
+        "question": "Havola (link) yaratish uchun qaysi teg ishlatiladi?",
         "answers": [
             "<a>",
-            "<link>",
             "<href>",
-            "<hyperlink>"
+            "<url>",
+            "<link>"
         ],
         "correct_answer": "<a>"
     },
     {
-        "question": "HTMLda `<ul>` nimani anglatadi?",
+        "question": "HTMLda ro‘yxat (unordered list) qanday yaratiladi?",
         "answers": [
-            "Rasm ro'yxati",
-            "Belgilanmagan ro'yxat",
-            "Jadval",
-            "Formalar ro'yxati"
+            "<menu></menu>",
+            "<ol><li></li></ol>",
+            "<ul><li></li></ul>",
+            "<list></list>"
         ],
-        "correct_answer": "Belgilanmagan ro'yxat"
+        "correct_answer": "<ul><li></li></ul>"
     },
     {
-        "question": "CSS nima uchun kerak?",
+        "question": "Formani yaratish uchun teg?",
         "answers": [
-            "Skript yozish uchun",
-            "Ma’lumotlarni saqlash uchun",
-            "Sahifani uslub bilan bezash uchun",
-            "Fayl yuklash uchun"
+            "<input>",
+            "<form>",
+            "<fieldset>",
+            "<button>"
         ],
-        "correct_answer": "Sahifani uslub bilan bezash uchun"
+        "correct_answer": "<form>"
     },
     {
-        "question": "CSS fayli qanday kengaytmaga ega?",
+        "question": "Matn kiritish oynasi tegi?",
         "answers": [
-            ".html",
-            ".script",
+            "<form-input>",
+            "<textbox>",
+            "<textarea>",
+            "<input type=\"text\">"
+        ],
+        "correct_answer": "<input type=\"text\">"
+    },
+    {
+        "question": "Tugma yaratish uchun teg?",
+        "answers": [
+            "<submit>",
+            "<btn>",
+            "<input type=\"button\">",
+            "<button>"
+        ],
+        "correct_answer": "<button>"
+    },
+    {
+        "question": "Jadval (table) yaratishda qaysi teg ishlatiladi?",
+        "answers": [
+            "<grid>",
+            "<tab>",
+            "<table>",
+            "<sheet>"
+        ],
+        "correct_answer": "<table>"
+    },
+    {
+        "question": "HTMLda izoh yozish formati qanday?",
+        "answers": [
+            "# izoh",
+            "<!-- izoh -->",
+            "// izoh",
+            "/* izoh */"
+        ],
+        "correct_answer": "<!-- izoh -->"
+    },
+    {
+        "question": "Linkda yangi oynada ochilishi uchun qanday atribut ishlatiladi?",
+        "answers": [
+            "blank=\"yes\"",
+            "new=\"true\"",
+            "target=\"_blank\"",
+            "window=\"new\""
+        ],
+        "correct_answer": "target=\"_blank\""
+    },
+    {
+        "question": "HTMLda div nima?",
+        "answers": [
+            "Blok element",
+            "Inline element",
+            "Form elementi",
+            "Rasm elementi"
+        ],
+        "correct_answer": "Blok element"
+    },
+    {
+        "question": "HTML faylida JavaScript kod qayerga yoziladi?",
+        "answers": [
+            "<code>",
+            "<js>",
+            "<javascript>",
+            "<script>"
+        ],
+        "correct_answer": "<script>"
+    },
+    {
+        "question": "CSS nima?",
+        "answers": [
+            "Computer Style Sheets",
+            "Colorful Style Sheets",
+            "Cascading Style Sheets",
+            "Creative Style Sheets"
+        ],
+        "correct_answer": "Cascading Style Sheets"
+    },
+    {
+        "question": "CSS fayl kengaytmasi?",
+        "answers": [
             ".css",
-            ".style"
+            ".cs",
+            ".style",
+            ".design"
         ],
         "correct_answer": ".css"
     },
     {
-        "question": "CSSda rang berish uchun qaysi xossa ishlatiladi?",
+        "question": "HTML faylga CSS ulash uchun teg?",
         "answers": [
-            "font",
-            "text",
-            "background",
-            "color"
+            "<css>",
+            "<script>",
+            "<link>",
+            "<style>"
+        ],
+        "correct_answer": "<link>"
+    },
+    {
+        "question": "Element rangini o‘zgartirish uchun xossa?",
+        "answers": [
+            "text-color",
+            "color",
+            "font-color",
+            "background"
         ],
         "correct_answer": "color"
     },
     {
-        "question": "CSS-da font o‘lchamini o‘rnatish uchun qaysi xossa ishlatiladi?",
+        "question": "Fon rangini belgilash uchun xossa?",
         "answers": [
-            "font-weight",
-            "font-size",
-            "text-size",
-            "size"
+            "color",
+            "background",
+            "bgcolor",
+            "background-color"
         ],
-        "correct_answer": "font-size"
+        "correct_answer": "background-color"
     },
     {
-        "question": "Elementni markazga joylashtirish uchun CSSda nima ishlatiladi?",
+        "question": "Matnni markazga hizalash uchun CSS qoidasi?",
         "answers": [
-            "text-align: center",
-            "margin: auto",
-            "display: block",
-            "align: middle"
+            "center: true;",
+            "text: middle;",
+            "text-align: center;",
+            "align: center;"
         ],
-        "correct_answer": "margin: auto"
+        "correct_answer": "text-align: center;"
     },
     {
-        "question": "CSS-da qanday qilib elementga chekka (border) beriladi?",
+        "question": "Tashqi bo‘sh joyni belgilovchi xossa?",
         "answers": [
-            "border: 1px solid black",
-            "outline: 1px",
-            "frame: solid",
-            "box: black line"
+            "padding",
+            "space",
+            "margin",
+            "border"
         ],
-        "correct_answer": "border: 1px solid black"
+        "correct_answer": "margin"
     },
     {
-        "question": "CSSda `.box` qanday tanlanadi?",
+        "question": "Ichki bo‘sh joyni belgilovchi xossa?",
         "answers": [
-            "#box",
-            "box",
-            ".box",
-            "*box"
+            "margin",
+            "padding",
+            "border",
+            "space"
         ],
-        "correct_answer": ".box"
+        "correct_answer": "padding"
+    },
+    {
+        "question": "Chegarani belgilash uchun xossa?",
+        "answers": [
+            "border",
+            "margin",
+            "line",
+            "outline"
+        ],
+        "correct_answer": "border"
+    },
+    {
+        "question": "CSSda selektor nima?",
+        "answers": [
+            "Rasm qo‘shuvchi",
+            "Element tanlovchi",
+            "Link ochuvchi",
+            "Matn yozuvchi"
+        ],
+        "correct_answer": "Element tanlovchi"
+    },
+    {
+        "question": "Class selektori qanday yoziladi?",
+        "answers": [
+            ".className",
+            "#className",
+            "class=className",
+            "class.className"
+        ],
+        "correct_answer": ".className"
+    },
+    {
+        "question": "ID selektori qanday yoziladi?",
+        "answers": [
+            ".idName",
+            "#idName",
+            "id=idName",
+            "id#idName"
+        ],
+        "correct_answer": "#idName"
+    },
+    {
+        "question": "Hover effekti nima?",
+        "answers": [
+            "Scroll qilinganda",
+            "Click qilinganda",
+            "Kursor ustiga borganda",
+            "Matn yozilganda"
+        ],
+        "correct_answer": "Kursor ustiga borganda"
+    },
+    {
+        "question": "Responsive dizayn nima?",
+        "answers": [
+            "Oddiy dizayn",
+            "Mobil dizayn",
+            "Statik dizayn",
+            "Ekran o‘lchamiga mos"
+        ],
+        "correct_answer": "Ekran o‘lchamiga mos"
+    },
+    {
+        "question": "Media query nima?",
+        "answers": [
+            "Fonlyar CSS",
+            "Jadval uchun CSS",
+            "Ekran o‘lchamiga qarab CSS",
+            "Fon rasmini belgilash"
+        ],
+        "correct_answer": "Ekran o‘lchamiga qarab CSS"
+    },
+    {
+        "question": "Display: flex nima qiladi?",
+        "answers": [
+            "Elementni markazga olib keladi",
+            "Moslashuvchan konteyner",
+            "Rasm chiqaradi",
+            "Blokni yashiradi"
+        ],
+        "correct_answer": "Moslashuvchan konteyner"
+    },
+    {
+        "question": "Position: absolute nima qiladi?",
+        "answers": [
+            "Katta qiladi",
+            "Matn qo‘shadi",
+            "Rang beradi",
+            "Joylashuvni aniqlaydi"
+        ],
+        "correct_answer": "Joylashuvni aniqlaydi"
     },
     {
         "question": "JavaScript nima?",
         "answers": [
-            "Styling tili",
-            "Belgilar tahlilchisi",
-            "Interaktivlik qo‘shish uchun til",
-            "Ma’lumotlar bazasi tili"
+            "Dinamik dasturlash tili",
+            "CSS tillaridan biri",
+            "Statik til",
+            "Skript yozuvchi"
         ],
-        "correct_answer": "Interaktivlik qo‘shish uchun til"
+        "correct_answer": "Dinamik dasturlash tili"
     },
     {
-        "question": "JS da o‘zgaruvchi e’lon qilish uchun to‘g‘ri sintaksis?",
+        "question": "JavaScript fayl kengaytmasi?",
         "answers": [
-            "var a",
-            "int a",
-            "let a",
-            "declare a"
+            ".java",
+            ".jv",
+            ".javascript",
+            ".js"
         ],
-        "correct_answer": "let a"
+        "correct_answer": ".js"
     },
     {
-        "question": "JavaScriptda funksiyalar qanday boshlanadi?",
+        "question": "HTMLga JS faylni ulash uchun teg?",
         "answers": [
-            "func myFunction()",
-            "function myFunction()",
-            "def myFunction()",
-            "start myFunction()"
+            "<javascript>",
+            "<code>",
+            "<script>",
+            "<js>"
         ],
-        "correct_answer": "function myFunction()"
+        "correct_answer": "<script>"
     },
     {
-        "question": "JavaScriptda massiv qanday yaratiladi?",
+        "question": "O‘zgaruvchi e’lon qilish uchun kalit so‘z?",
         "answers": [
-            "let a = {}",
-            "let a = []",
-            "let a = ()",
-            "let a = ''"
+            "let",
+            "dim",
+            "var",
+            "int"
         ],
-        "correct_answer": "let a = []"
+        "correct_answer": "let"
     },
     {
-        "question": "alert() funksiyasi nima qiladi?",
+        "question": "Son qo‘shish amali?",
+        "answers": [
+            "/",
+            "*",
+            "-",
+            "+"
+        ],
+        "correct_answer": "+"
+    },
+    {
+        "question": "Shart operatori qanday yoziladi?",
+        "answers": [
+            "when",
+            "for",
+            "if",
+            "else"
+        ],
+        "correct_answer": "if"
+    },
+    {
+        "question": "Funktsiya qanday yaratiladi?",
+        "answers": [
+            "function",
+            "def",
+            "create",
+            "fun"
+        ],
+        "correct_answer": "function"
+    },
+    {
+        "question": "Massiv qanday yaratiladi?",
+        "answers": [
+            "[1,2,3]",
+            "{1,2,3}",
+            "(1,2,3)",
+            "array(1,2,3)"
+        ],
+        "correct_answer": "[1,2,3]"
+    },
+    {
+        "question": "alert nima qiladi?",
         "answers": [
             "Rasm chiqaradi",
-            "Oyna ochib habar beradi",
-            "Formani yuboradi",
-            "Jadval chizadi"
+            "Ogohlantirish chiqaradi",
+            "Kod to‘xtaydi",
+            "Sozlamani ochadi"
         ],
-        "correct_answer": "Oyna ochib habar beradi"
+        "correct_answer": "Ogohlantirish chiqaradi"
     },
     {
-        "question": "document.getElementById() nima uchun ishlatiladi?",
+        "question": "console.log() nimaga xizmat qiladi?",
         "answers": [
-            "Elementga ID berish uchun",
-            "ID bilan elementni olish uchun",
-            "CSS uslublarini qo‘shish uchun",
-            "Ma’lumotni saqlash uchun"
+            "Konsolga chiqaradi",
+            "Matn o‘chadi",
+            "Hujjat ochadi",
+            "Funksiya to‘xtaydi"
         ],
-        "correct_answer": "ID bilan elementni olish uchun"
+        "correct_answer": "Konsolga chiqaradi"
     },
     {
-        "question": "JavaScriptda if operatori nima qiladi?",
+        "question": "ID bo‘yicha elementni olish funksiyasi?",
         "answers": [
-            "Sikl hosil qiladi",
-            "Shartni tekshiradi",
-            "Matn chiqaradi",
-            "Raqam qo‘shadi"
+            "findById",
+            "querySelector",
+            "getElementById",
+            "getId"
         ],
-        "correct_answer": "Shartni tekshiradi"
+        "correct_answer": "getElementById"
     },
     {
-        "question": "JS da sikl operatori?",
+        "question": "Click hodisasi qanday ulanadi?",
         "answers": [
-            "loop",
-            "repeat",
-            "for",
-            "if"
+            "onClick",
+            "clickThis",
+            "addEventListener",
+            "eventClick"
         ],
-        "correct_answer": "for"
+        "correct_answer": "addEventListener"
     },
     {
-        "question": "JS da satr uzunligi qanday olinadi?",
+        "question": "String uzunligini olish?",
         "answers": [
-            "text.size",
-            "text.length",
-            "len(text)",
-            "text.count"
+            "string.length",
+            "string.count",
+            "length(string)",
+            "string.size"
         ],
-        "correct_answer": "text.length"
+        "correct_answer": "string.length"
     },
     {
-        "question": "JS da `===` operatori nima qiladi?",
+        "question": "Massivga yangi element qo‘shish?",
         "answers": [
-            "Faqat qiymatni solishtiradi",
-            "Qiymat va turini solishtiradi",
-            "Foydalanuvchi kiritadi",
-            "Funksiya chaqiradi"
+            "insert",
+            "push",
+            "add",
+            "append"
         ],
-        "correct_answer": "Qiymat va turini solishtiradi"
+        "correct_answer": "push"
     },
     {
-        "question": "CSSda `display: flex` nima uchun kerak?",
+        "question": "For loop qanday ishlaydi?",
         "answers": [
-            "Matnni bezash",
-            "Elementlarni joylashtirish",
-            "Orqa fon",
-            "Rang berish"
+            "for (let i=0; i<10; i++)",
+            "repeat 10",
+            "loop i=0 to 10",
+            "while i<10"
         ],
-        "correct_answer": "Elementlarni joylashtirish"
+        "correct_answer": "for (let i=0; i<10; i++)"
     },
     {
-        "question": "JS da `setTimeout()` nima qiladi?",
+        "question": "NaN nimani anglatadi?",
         "answers": [
-            "Satrlarni o‘chiradi",
-            "Kodlarni kechiktirib bajaradi",
-            "Jadval chizadi",
-            "Ma’lumot kiritadi"
+            "Null and None",
+            "Name and Number",
+            "No access name",
+            "Not a Number"
         ],
-        "correct_answer": "Kodlarni kechiktirib bajaradi"
-    },
-    {
-        "question": "HTML formani yuborish uchun nima ishlatiladi?",
-        "answers": [
-            "<send>",
-            "<submit>",
-            "<input type='submit'>",
-            "<post>"
-        ],
-        "correct_answer": "<input type='submit'>"
-    },
-    {
-        "question": "`typeof` operatori JS da nima uchun kerak?",
-        "answers": [
-            "Matn qo‘shish",
-            "Qiymat turini aniqlash",
-            "Sikl tuzish",
-            "Ma’lumot yuborish"
-        ],
-        "correct_answer": "Qiymat turini aniqlash"
-    },
-    {
-        "question": "JSda `Math.random()` nima beradi?",
-        "answers": [
-            "Belgilar",
-            "Butun son",
-            "Tasodifiy son",
-            "Matn"
-        ],
-        "correct_answer": "Tasodifiy son"
-    },
-    {
-        "question": "CSS da hover nima qiladi?",
-        "answers": [
-            "Klik effekti",
-            "Sichqoncha ustiga olib borilganda uslub",
-            "Satr uzunligi",
-            "Sahifa yuklanishi"
-        ],
-        "correct_answer": "Sichqoncha ustiga olib borilganda uslub"
-    },
-    {
-        "question": "HTMLda `<input>` nima uchun?",
-        "answers": [
-            "Ma’lumot ko‘rsatish",
-            "Ma’lumot kiritish",
-            "Sahifa yuklash",
-            "Sahifa bezatish"
-        ],
-        "correct_answer": "Ma’lumot kiritish"
-    },
-    {
-        "question": "JSda `addEventListener` nima uchun?",
-        "answers": [
-            "Satr uzunligi",
-            "Vazifa bajarish",
-            "Hodisani ushlash",
-            "Massiv yaratish"
-        ],
-        "correct_answer": "Hodisani ushlash"
-    },
-    {
-        "question": "HTMLda `<table>` nima uchun?",
-        "answers": [
-            "Ro‘yxat",
-            "Matn",
-            "Jadval",
-            "Rasm"
-        ],
-        "correct_answer": "Jadval"
-    },
-    {
-        "question": "CSSda `position: absolute` nima qiladi?",
-        "answers": [
-            "Sahifaga yopishadi",
-            "Elementni aniq joyga qo‘yadi",
-            "Havolani aniqlaydi",
-            "Input yaratadi"
-        ],
-        "correct_answer": "Elementni aniq joyga qo‘yadi"
-    },
-    {
-        "question": "JS da `console.log()` nima qiladi?",
-        "answers": [
-            "Xatolik chiqaradi",
-            "Ekranga chiqaradi",
-            "Konsolga yozadi",
-            "Fayl yaratadi"
-        ],
-        "correct_answer": "Konsolga yozadi"
-    },
-    {
-        "question": "HTML5 da video qo‘yish uchun teg?",
-        "answers": [
-            "<video>",
-            "<media>",
-            "<file>",
-            "<vid>"
-        ],
-        "correct_answer": "<video>"
-    },
-    {
-        "question": "JS da `JSON.parse()` nima qiladi?",
-        "answers": [
-            "Matn yaratadi",
-            "JSON satrini ob'ektga aylantiradi",
-            "Funksiya chaqiradi",
-            "Massivni nusxalaydi"
-        ],
-        "correct_answer": "JSON satrini ob'ektga aylantiradi"
-    },
-    {
-        "question": "CSS da `z-index` nima qiladi?",
-        "answers": [
-            "Masshtab",
-            "Element balandligini",
-            "Elementlar ustma-ustlik tartibi",
-            "Joylashuvni"
-        ],
-        "correct_answer": "Elementlar ustma-ustlik tartibi"
-    },
-    {
-        "question": "JSda `splice()` metodi nima qiladi?",
-        "answers": [
-            "Element qo‘shadi yoki o‘chiradi",
-            "Satr o‘zgartiradi",
-            "Obyekt hosil qiladi",
-            "Rang beradi"
-        ],
-        "correct_answer": "Element qo‘shadi yoki o‘chiradi"
-    },
-    {
-        "question": "HTMLda `<meta>` tegi qayerga yoziladi?",
-        "answers": [
-            "<body>",
-            "<html>",
-            "<head>",
-            "<footer>"
-        ],
-        "correct_answer": "<head>"
-    },
-    {
-        "question": "CSSda `overflow: hidden` nima qiladi?",
-        "answers": [
-            "Elementni yashiradi",
-            "Tashqariga chiqqan qismini yashiradi",
-            "Elementni aniqlaydi",
-            "Joy ajratadi"
-        ],
-        "correct_answer": "Tashqariga chiqqan qismini yashiradi"
+        "correct_answer": "Not a Number"
     }
 ]
