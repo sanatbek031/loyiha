@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="timer-box"></div>
+
+    <div style="display: flex; gap: 40px; align-items: flex-start;">
+        <div style="flex: 3;">
+            <form id="quiz-form"></form>
+            <div id="result-box" style="display: none;"></div>
+        </div>
+        <div style="flex: 1;">
+            <div id="question-nav" style="display: flex; flex-wrap: wrap; gap: 12px;"></div>
+        </div>
+    </div>
+
+    <script>
+        let form = document.getElementById('quiz-form');
+        let navBox = document.getElementById('question-nav');
+        let timerBox = document.getElementById('timer-box');
+        let resultBox = document.getElementById('result-box');
+        let savollar = [];
+        let currentQuestion = 0;
+        let timerInterval;
+        let correctCount = 0;
+        let formData = new FormData();
+        let totalSeconds = 60 * 60;
+        let testEnded = false;
+
+        function shuffleArray(array) {
+            return array.sort(() => Math.random() - 0.5);
+        }
+
+        function formatTime(seconds) {
+            let h = Math.floor(seconds / 3600);
+            let m = Math.floor((seconds % 3600) / 60);
+            let s = seconds % 60;
+            return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function startGlobalTimer() {
+            updateTimer();
+            timerInterval = setInterval(() => {
+                totalSeconds--;
+                if (totalSeconds <= 0) {
+                    clearInterval(timerInterval);
+                    showResult();
+                } else {
+                    updateTimer();
+                }
+            }, 1000);
+        }
+
+        function updateTimer() {
+            timerBox.innerHTML = `⏳ Qolgan vaqt: ${formatTime(totalSeconds)}`;
+        }
+
+        function showQuestion(index) {
+            if (testEnded) return;
+            currentQuestion = index;
+            form.innerHTML = "";
+
+            let box = document.createElement('div');
+            box.classList.add('box');
+            form.append(box);
+
+            let savol = document.createElement('h2');
+            savol.textContent = (index + 1) + ") " + savollar[index].question;
+            box.append(savol);
+
+            let name = 'question-' + (index + 1);
+            let userAnswer = formData.get(name);
+
+            savollar[index].answers.forEach(answer => {
+                let radio = document.createElement('input');
+                radio.type = 'radio';
+                radio.value = answer;
+                radio.name = name;
+                if (userAnswer) {
+                    radio.disabled = true;
+                    if (userAnswer === answer) radio.checked = true;
+                }
+
+                let label = document.createElement('label');
+                label.appendChild(radio);
+                label.append(" " + answer);
+                box.appendChild(label);
+                box.appendChild(document.createElement('br'));
+
+                radio.addEventListener('change', () => {
+                    if (!formData.has(name) && !testEnded) {
+                        formData.set(name, radio.value);
+                        updateNavButton(index);
+
+                        let isCorrect = radio.value === savollar[index].correct_answer;
+
+                        let radios = document.getElementsByName(name);
+                        radios.forEach(r => r.disabled = true);
+
+                        let emoji = document.createElement('div');
+                        emoji.style.fontSize = "40px";
+                        emoji.style.textAlign = "center";
+                        emoji.style.marginTop = "10px";
+                        emoji.textContent = isCorrect ? "🎉 To‘g‘ri!" : "😢 Noto‘g‘ri!";
+                        form.append(emoji);
+
+                        if (!isCorrect) {
+                            let correctDiv = document.createElement('div');
+                            correctDiv.style.marginTop = "10px";
+                            correctDiv.style.color = "green";
+                            correctDiv.style.fontWeight = "bold";
+                            correctDiv.textContent = `✅ To‘g‘ri javob: ${savollar[index].correct_answer}`;
+                            form.append(correctDiv);
+                        }
+
+                        setTimeout(() => {
+                            emoji.remove();
+                            if (currentQuestion < savollar.length - 1) {
+                                showQuestion(currentQuestion + 1);
+                            }
+                        }, 1000);
+                    }
+                });
+            });
+
+            addNavigationButtons();
+        }
+
+        function addNavigationButtons() {
+            if (testEnded) return;
+            let nav = document.createElement('div');
+            nav.style.marginTop = "20px";
+            nav.style.display = "flex";
+            nav.style.justifyContent = "space-between";
+
+            let prevBtn = document.createElement('button');
+            prevBtn.textContent = "⬅ Oldingi";
+            prevBtn.disabled = currentQuestion === 0;
+            prevBtn.onclick = (e) => {
+                e.preventDefault();
+                showQuestion(currentQuestion - 1);
+            };
+
+            let nextBtn = document.createElement('button');
+            nextBtn.textContent = "Keyingi ➡";
+            nextBtn.disabled = currentQuestion === savollar.length - 1;
+            nextBtn.onclick = (e) => {
+                e.preventDefault();
+                showQuestion(currentQuestion + 1);
+            };
+
+            let finishBtn = document.createElement('button');
+            finishBtn.textContent = "✅ Yakunlash";
+            finishBtn.onclick = (e) => {
+                e.preventDefault();
+                showResult();
+            };
+
+            nav.append(prevBtn, finishBtn, nextBtn);
+            form.append(nav);
+        }
+
+        function updateNavButton(index) {
+            let btn = document.querySelector(`#btn-q-${index}`);
+            if (!btn) return;
+
+            const name = 'question-' + (index + 1);
+            const userAnswer = formData.get(name);
+            const correctAnswer = savollar[index].correct_answer;
+
+            if (userAnswer) {
+                if (userAnswer === correctAnswer) {
+                    btn.style.backgroundColor = "#22c55e";
+                    btn.style.color = "white";
+                } else {
+                    btn.style.backgroundColor = "#ef4444";
+                    btn.style.color = "white";
+                }
+            } else {
+                btn.style.backgroundColor = "";
+                btn.style.color = "";
+            }
+        }
+
+        function renderNavButtons() {
+            navBox.innerHTML = "";
+            for (let i = 0; i < savollar.length; i++) {
+                let btn = document.createElement('button');
+                btn.textContent = i + 1;
+                btn.id = 'btn-q-' + i;
+                btn.onclick = () => {
+                    showQuestion(i);
+                };
+                navBox.appendChild(btn);
+            }
+        }
+
+        function showResult() {
+            if (testEnded) return;
+            clearInterval(timerInterval);
+            testEnded = true;
+
+            correctCount = 0;
+            for (let [key, value] of formData.entries()) {
+                let index = parseInt(key.replace('question-', '')) - 1;
+                if (savollar[index].correct_answer === value) {
+                    correctCount++;
+                }
+            }
+
+            for (let i = 0; i < savollar.length; i++) {
+                updateNavButton(i);
+            }
+
+            resultBox.style.display = "block";
+            resultBox.innerHTML = `🎯 <strong>Test yakunlandi</strong><br>
+                ✅ To‘g‘ri javoblar: ${correctCount} / ${savollar.length}<br>
+                ⏱ Tugash vaqti: ${formatTime(60 * 60 - totalSeconds)} sarflandi`;
+
+            let retryBtn = document.createElement('button');
+            retryBtn.id = 'retry-btn';
+            retryBtn.textContent = '🔁 Testni takrorlash';
+            retryBtn.onclick = () => {
+                window.location.reload();
+            };
+            resultBox.appendChild(retryBtn);
+        }
+
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => {
+                data = shuffleArray(data);
+                savollar = data.map(q => ({ ...q, answers: shuffleArray(q.answers) }));
+                renderNavButtons();
+                startGlobalTimer();
+                showQuestion(currentQuestion);
+            })
+            .catch(err => console.error("Xatolik:", err));
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,402 @@
+[
+    {
+        "question": "HTML nima uchun ishlatiladi?",
+        "answers": [
+            "Veb sahifalarni yaratish uchun",
+            "Rasmlarni tahrirlash uchun",
+            "Ma'lumotlar bazasini boshqarish uchun",
+            "Operatsion tizimni o'rnatish uchun"
+        ],
+        "correct_answer": "Veb sahifalarni yaratish uchun"
+    },
+    {
+        "question": "HTML hujjatidagi asosiy konteyner qaysi teg?",
+        "answers": [
+            "<html>",
+            "<head>",
+            "<body>",
+            "<main>"
+        ],
+        "correct_answer": "<html>"
+    },
+    {
+        "question": "<br> tegi nimaga xizmat qiladi?",
+        "answers": [
+            "Bo'shliq qo'shish",
+            "Satr oxiri",
+            "Satrni uzish",
+            "Rasm qo'yish"
+        ],
+        "correct_answer": "Satrni uzish"
+    },
+    {
+        "question": "Rasm qo‘yish uchun qaysi teg ishlatiladi?",
+        "answers": [
+            "<image>",
+            "<img>",
+            "<pic>",
+            "<src>"
+        ],
+        "correct_answer": "<img>"
+    },
+    {
+        "question": "Giperhavola yaratish uchun qaysi teg ishlatiladi?",
+        "answers": [
+            "<a>",
+            "<link>",
+            "<href>",
+            "<hyperlink>"
+        ],
+        "correct_answer": "<a>"
+    },
+    {
+        "question": "HTMLda `<ul>` nimani anglatadi?",
+        "answers": [
+            "Rasm ro'yxati",
+            "Belgilanmagan ro'yxat",
+            "Jadval",
+            "Formalar ro'yxati"
+        ],
+        "correct_answer": "Belgilanmagan ro'yxat"
+    },
+    {
+        "question": "CSS nima uchun kerak?",
+        "answers": [
+            "Skript yozish uchun",
+            "Ma’lumotlarni saqlash uchun",
+            "Sahifani uslub bilan bezash uchun",
+            "Fayl yuklash uchun"
+        ],
+        "correct_answer": "Sahifani uslub bilan bezash uchun"
+    },
+    {
+        "question": "CSS fayli qanday kengaytmaga ega?",
+        "answers": [
+            ".html",
+            ".script",
+            ".css",
+            ".style"
+        ],
+        "correct_answer": ".css"
+    },
+    {
+        "question": "CSSda rang berish uchun qaysi xossa ishlatiladi?",
+        "answers": [
+            "font",
+            "text",
+            "background",
+            "color"
+        ],
+        "correct_answer": "color"
+    },
+    {
+        "question": "CSS-da font o‘lchamini o‘rnatish uchun qaysi xossa ishlatiladi?",
+        "answers": [
+            "font-weight",
+            "font-size",
+            "text-size",
+            "size"
+        ],
+        "correct_answer": "font-size"
+    },
+    {
+        "question": "Elementni markazga joylashtirish uchun CSSda nima ishlatiladi?",
+        "answers": [
+            "text-align: center",
+            "margin: auto",
+            "display: block",
+            "align: middle"
+        ],
+        "correct_answer": "margin: auto"
+    },
+    {
+        "question": "CSS-da qanday qilib elementga chekka (border) beriladi?",
+        "answers": [
+            "border: 1px solid black",
+            "outline: 1px",
+            "frame: solid",
+            "box: black line"
+        ],
+        "correct_answer": "border: 1px solid black"
+    },
+    {
+        "question": "CSSda `.box` qanday tanlanadi?",
+        "answers": [
+            "#box",
+            "box",
+            ".box",
+            "*box"
+        ],
+        "correct_answer": ".box"
+    },
+    {
+        "question": "JavaScript nima?",
+        "answers": [
+            "Styling tili",
+            "Belgilar tahlilchisi",
+            "Interaktivlik qo‘shish uchun til",
+            "Ma’lumotlar bazasi tili"
+        ],
+        "correct_answer": "Interaktivlik qo‘shish uchun til"
+    },
+    {
+        "question": "JS da o‘zgaruvchi e’lon qilish uchun to‘g‘ri sintaksis?",
+        "answers": [
+            "var a",
+            "int a",
+            "let a",
+            "declare a"
+        ],
+        "correct_answer": "let a"
+    },
+    {
+        "question": "JavaScriptda funksiyalar qanday boshlanadi?",
+        "answers": [
+            "func myFunction()",
+            "function myFunction()",
+            "def myFunction()",
+            "start myFunction()"
+        ],
+        "correct_answer": "function myFunction()"
+    },
+    {
+        "question": "JavaScriptda massiv qanday yaratiladi?",
+        "answers": [
+            "let a = {}",
+            "let a = []",
+            "let a = ()",
+            "let a = ''"
+        ],
+        "correct_answer": "let a = []"
+    },
+    {
+        "question": "alert() funksiyasi nima qiladi?",
+        "answers": [
+            "Rasm chiqaradi",
+            "Oyna ochib habar beradi",
+            "Formani yuboradi",
+            "Jadval chizadi"
+        ],
+        "correct_answer": "Oyna ochib habar beradi"
+    },
+    {
+        "question": "document.getElementById() nima uchun ishlatiladi?",
+        "answers": [
+            "Elementga ID berish uchun",
+            "ID bilan elementni olish uchun",
+            "CSS uslublarini qo‘shish uchun",
+            "Ma’lumotni saqlash uchun"
+        ],
+        "correct_answer": "ID bilan elementni olish uchun"
+    },
+    {
+        "question": "JavaScriptda if operatori nima qiladi?",
+        "answers": [
+            "Sikl hosil qiladi",
+            "Shartni tekshiradi",
+            "Matn chiqaradi",
+            "Raqam qo‘shadi"
+        ],
+        "correct_answer": "Shartni tekshiradi"
+    },
+    {
+        "question": "JS da sikl operatori?",
+        "answers": [
+            "loop",
+            "repeat",
+            "for",
+            "if"
+        ],
+        "correct_answer": "for"
+    },
+    {
+        "question": "JS da satr uzunligi qanday olinadi?",
+        "answers": [
+            "text.size",
+            "text.length",
+            "len(text)",
+            "text.count"
+        ],
+        "correct_answer": "text.length"
+    },
+    {
+        "question": "JS da `===` operatori nima qiladi?",
+        "answers": [
+            "Faqat qiymatni solishtiradi",
+            "Qiymat va turini solishtiradi",
+            "Foydalanuvchi kiritadi",
+            "Funksiya chaqiradi"
+        ],
+        "correct_answer": "Qiymat va turini solishtiradi"
+    },
+    {
+        "question": "CSSda `display: flex` nima uchun kerak?",
+        "answers": [
+            "Matnni bezash",
+            "Elementlarni joylashtirish",
+            "Orqa fon",
+            "Rang berish"
+        ],
+        "correct_answer": "Elementlarni joylashtirish"
+    },
+    {
+        "question": "JS da `setTimeout()` nima qiladi?",
+        "answers": [
+            "Satrlarni o‘chiradi",
+            "Kodlarni kechiktirib bajaradi",
+            "Jadval chizadi",
+            "Ma’lumot kiritadi"
+        ],
+        "correct_answer": "Kodlarni kechiktirib bajaradi"
+    },
+    {
+        "question": "HTML formani yuborish uchun nima ishlatiladi?",
+        "answers": [
+            "<send>",
+            "<submit>",
+            "<input type='submit'>",
+            "<post>"
+        ],
+        "correct_answer": "<input type='submit'>"
+    },
+    {
+        "question": "`typeof` operatori JS da nima uchun kerak?",
+        "answers": [
+            "Matn qo‘shish",
+            "Qiymat turini aniqlash",
+            "Sikl tuzish",
+            "Ma’lumot yuborish"
+        ],
+        "correct_answer": "Qiymat turini aniqlash"
+    },
+    {
+        "question": "JSda `Math.random()` nima beradi?",
+        "answers": [
+            "Belgilar",
+            "Butun son",
+            "Tasodifiy son",
+            "Matn"
+        ],
+        "correct_answer": "Tasodifiy son"
+    },
+    {
+        "question": "CSS da hover nima qiladi?",
+        "answers": [
+            "Klik effekti",
+            "Sichqoncha ustiga olib borilganda uslub",
+            "Satr uzunligi",
+            "Sahifa yuklanishi"
+        ],
+        "correct_answer": "Sichqoncha ustiga olib borilganda uslub"
+    },
+    {
+        "question": "HTMLda `<input>` nima uchun?",
+        "answers": [
+            "Ma’lumot ko‘rsatish",
+            "Ma’lumot kiritish",
+            "Sahifa yuklash",
+            "Sahifa bezatish"
+        ],
+        "correct_answer": "Ma’lumot kiritish"
+    },
+    {
+        "question": "JSda `addEventListener` nima uchun?",
+        "answers": [
+            "Satr uzunligi",
+            "Vazifa bajarish",
+            "Hodisani ushlash",
+            "Massiv yaratish"
+        ],
+        "correct_answer": "Hodisani ushlash"
+    },
+    {
+        "question": "HTMLda `<table>` nima uchun?",
+        "answers": [
+            "Ro‘yxat",
+            "Matn",
+            "Jadval",
+            "Rasm"
+        ],
+        "correct_answer": "Jadval"
+    },
+    {
+        "question": "CSSda `position: absolute` nima qiladi?",
+        "answers": [
+            "Sahifaga yopishadi",
+            "Elementni aniq joyga qo‘yadi",
+            "Havolani aniqlaydi",
+            "Input yaratadi"
+        ],
+        "correct_answer": "Elementni aniq joyga qo‘yadi"
+    },
+    {
+        "question": "JS da `console.log()` nima qiladi?",
+        "answers": [
+            "Xatolik chiqaradi",
+            "Ekranga chiqaradi",
+            "Konsolga yozadi",
+            "Fayl yaratadi"
+        ],
+        "correct_answer": "Konsolga yozadi"
+    },
+    {
+        "question": "HTML5 da video qo‘yish uchun teg?",
+        "answers": [
+            "<video>",
+            "<media>",
+            "<file>",
+            "<vid>"
+        ],
+        "correct_answer": "<video>"
+    },
+    {
+        "question": "JS da `JSON.parse()` nima qiladi?",
+        "answers": [
+            "Matn yaratadi",
+            "JSON satrini ob'ektga aylantiradi",
+            "Funksiya chaqiradi",
+            "Massivni nusxalaydi"
+        ],
+        "correct_answer": "JSON satrini ob'ektga aylantiradi"
+    },
+    {
+        "question": "CSS da `z-index` nima qiladi?",
+        "answers": [
+            "Masshtab",
+            "Element balandligini",
+            "Elementlar ustma-ustlik tartibi",
+            "Joylashuvni"
+        ],
+        "correct_answer": "Elementlar ustma-ustlik tartibi"
+    },
+    {
+        "question": "JSda `splice()` metodi nima qiladi?",
+        "answers": [
+            "Element qo‘shadi yoki o‘chiradi",
+            "Satr o‘zgartiradi",
+            "Obyekt hosil qiladi",
+            "Rang beradi"
+        ],
+        "correct_answer": "Element qo‘shadi yoki o‘chiradi"
+    },
+    {
+        "question": "HTMLda `<meta>` tegi qayerga yoziladi?",
+        "answers": [
+            "<body>",
+            "<html>",
+            "<head>",
+            "<footer>"
+        ],
+        "correct_answer": "<head>"
+    },
+    {
+        "question": "CSSda `overflow: hidden` nima qiladi?",
+        "answers": [
+            "Elementni yashiradi",
+            "Tashqariga chiqqan qismini yashiradi",
+            "Elementni aniqlaydi",
+            "Joy ajratadi"
+        ],
+        "correct_answer": "Tashqariga chiqqan qismini yashiradi"
+    }
+]
